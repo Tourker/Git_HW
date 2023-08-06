@@ -86,7 +86,10 @@ systemctl enable zabbix-agent
 ---
 
 ### Задание 3*
+1. `Скриншот hosts с Windows`
 
-3. `Скриншот раздела Monitoring > Latest data с zabbix агента на Windows`
+![Скриншот раздела Monitoring > Latest data](https://github.com/Tourker/Git_HW/blob/main/img/host_windows.jpg)`
+
+2. `Скриншот раздела Monitoring > Latest data с zabbix агента на Windows`
 
 ![Скриншот раздела Monitoring > Latest data](https://github.com/Tourker/Git_HW/blob/main/img/latest_data_windows.jpg)`
