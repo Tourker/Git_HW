@@ -32,8 +32,8 @@
 
 `Cкриншот Grafana`
 
-![Скриншот Grafana](https://github.com/Tourker/Git_HW/blob/main/img/monitoring/prometheus_2/zadanie4.jpg)
+![Скриншот Grafana](https://github.com/Tourker/Git_HW/blob/main/img/monitoring/prometheus_2/Zadanie4.jpg)
 
 `Cкриншот дашборда`
 
-![Скриншот дашборда](https://github.com/Tourker/Git_HW/blob/main/img/monitoring/prometheus_2/zadanie4_2.jpg)
+![Скриншот дашборда](https://github.com/Tourker/Git_HW/blob/main/img/monitoring/prometheus_2/Zadanie4_2.jpg)
