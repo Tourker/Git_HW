@@ -3,8 +3,11 @@
 ---
 
 ### Задание 1
-
+`Скриншот пинга от PC0 до Server при разрыве соединения между Switch0 и Router2`
 ![Настройки](https://github.com/Tourker/Git_HW/blob/main/img/backup/zadanie1.jpg)
+
+`Скриншот пинга от PC0 до Server при разрыве соединения между Switch0 и Router1`
+![Настройки2](https://github.com/Tourker/Git_HW/blob/main/img/backup/zadanie1_2.jpg)
 
 ### Задание 2
 
@@ -42,6 +45,6 @@ fi
 
 `Cкриншот перезда на другой сервер`
 
-![Cкриншот перезда на другой сервер](https://github.com/Tourker/Git_HW/blob/main/img/backup/Transport_on_VM2.jpg)
+![Cкриншот перезда на другой сервер](https://github.com/Tourker/Git_HW/blob/main/img/backup/Keepalived_VM2.jpg)
 
 
