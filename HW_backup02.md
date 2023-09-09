@@ -64,7 +64,7 @@ backend web_servers    # секция бэкенд
 
 ```
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/hw2/Zadanie1_result.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/Hw2/Zadanie1_result.jpg)
 
 ### Задание 2
 
@@ -134,11 +134,11 @@ backend web_servers    # секция бэкенд
 
 `Cкриншот работы с запросом example.local`
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/hw2/Zadanie2_HAProxy_domainjpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/Hw2/Zadanie2_HAProxy_domainjpg)
 
 `Cкриншот работы без запроса example.local`
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/hw2/Zadanie2_HAProxy_nodomain.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/Hw2/Zadanie2_HAProxy_nodomain.jpg)
 
 
 
