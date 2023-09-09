@@ -134,7 +134,7 @@ backend web_servers    # секция бэкенд
 
 `Cкриншот работы с запросом example.local`
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/Hw2/Zadanie2_HAProxy_domainjpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/backup/Hw2/Zadanie2_HAProxy_domain.jpg)
 
 `Cкриншот работы без запроса example.local`
 
