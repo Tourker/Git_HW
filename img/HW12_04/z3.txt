@@ -1,0 +1,6 @@
+SELECT MONTH(p.payment_date) AS month_n, SUM(p.amount) AS sum_month, COUNT(r.rental_id) AS kol_rent FROM payment p
+JOIN rental r ON p.rental_id = r.rental_id
+WHERE MONTH(p.payment_date) = MONTH (r.rental_date) 
+GROUP BY month_n
+ORDER BY sum_month DESC
+LIMIT 1;

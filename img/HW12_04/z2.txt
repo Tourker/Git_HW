@@ -1,0 +1,3 @@
+SELECT COUNT(film_id) AS films  
+FROM film f
+WHERE f.`length` > (SELECT AVG (f.`length`) FROM film f);
