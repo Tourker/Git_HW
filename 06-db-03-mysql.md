@@ -75,16 +75,17 @@ networks:
 
 #### Запрос на получение используемого engine
 
-SELECT table_name, table_schema, engine FROM information_schema.tables WHERE table_schema = DATABASE();
+`SELECT table_name, table_schema, engine FROM information_schema.tables WHERE table_schema = DATABASE();`
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_03/z3_table_status_engine.jpg)
 
 #### Изменение engine
 
+```
 ALTER TABLE orders ENGINE = MyISAM;
 ALTER TABLE orders ENGINE = InnoDB;
 SHOW PROFILES;
-
+```
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_03/z3_engines.jpg)
 
 ### Задание 4
