@@ -47,7 +47,7 @@ networks:
 
 ---
 
-###Задание 2:
+### Задание 2
 
 #### Создание пользователя с аттрибутами
 
@@ -59,8 +59,6 @@ networks:
 
 `GRANT SELECT ON test_db.* TO 'test'@'localhost';`
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_03/z2_grant_select.jpg)
-
 #### Запрос получения данных по пользователю test
 
 `SELECT * FROM INFORMATION_SCHEMA.USER_ATTRIBUTES WHERE user='test';`
@@ -69,7 +67,7 @@ networks:
 
 ---
 
-###Задание 3:
+### Задание 3
 
 #### Установка профилирования и просмотр профилей
 
@@ -89,7 +87,7 @@ SHOW PROFILES;
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_03/z3_engines.jpg)
 
-###Задание 4:
+### Задание 4
 
 #### Файл конфигурации my.cnf
 
