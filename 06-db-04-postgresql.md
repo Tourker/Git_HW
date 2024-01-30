@@ -57,19 +57,19 @@ volumes:
 
 `sudo docker exec -i postgres psql -U postgres < share/test_dump.sql`
 
-[Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z2_restore_backup_db_in_container.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z2_restore_backup_db_in_container.jpg)
 
 #### Сбор статистики командой ANALYZE
 
 `ANALYZE VERBOSE public.orders;`
 
-[Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z2_connect_and_analyze.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z2_connect_and_analyze.jpg)
 
 #### Столбец таблицы orders с наибольшим средним значением размера элементов в байтах
 
 `SELECT avg_width FROM pg_stats WHERE tablename='orders';`
 
-[Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z2_avg.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z2_avg.jpg)
 
 ---
 
@@ -83,7 +83,7 @@ volumes:
 `INSERT INTO orders_2 SELECT * FROM orders WHERE price <= 499;`
 `DELETE FROM ONLY orders;`
 
-[Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z3_sharding.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z3_sharding.jpg)
 
 Можно, если воспользоваться правилами вставки:
 
@@ -98,7 +98,7 @@ volumes:
 
 `pg_dump -U postgres test_database > /backup/backup_test_database.sql;`
 
-[Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z4_backup.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW_06_db_04/z4_backup.jpg)
 
 Добавил бы свойство UNIQUE:
 
