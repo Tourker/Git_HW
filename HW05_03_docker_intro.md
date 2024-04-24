@@ -111,7 +111,7 @@ EXPOSE 80/tcp
 
 Предупреждение о том, что есть зависимый контейнер task5-portainer-1. И предлагает запустить, используя команду с флагом --remove-orphans.
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_03/z5_run_compose_d.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_03/z5_run_compose.jpg)
 
 `Удаление проекта docker compose: `
 
