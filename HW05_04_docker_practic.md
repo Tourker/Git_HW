@@ -3,7 +3,8 @@
 ---
 ### Задача 0
 
-`Скриншот установленного docker compose`
+`Скриншот установленного docker compose: `
+
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_04/z0.jpg)
 
 ---
@@ -40,7 +41,7 @@ CMD ["python", "main.py"]
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_04/z2_registry_tag.jpg)
 
-`Ссылка на отчет сканирования уязвимостей: `
+`Ссылка на отчет сканирования уязвимостей: ` https://github.com/Tourker/Git_HW/blob/main/vulnerabilities.csv
 
 ---
 
