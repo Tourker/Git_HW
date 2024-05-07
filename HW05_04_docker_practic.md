@@ -90,6 +90,14 @@ CMD ["python", "main.py"]
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_04/z6_3_docker_save.jpg)
 
+`Распаковка слоя: `
+
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_04/z6_3_layer.jpg)
+
+`terraform в каталоге bin: `
+
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/img/HW05_04/z6_4_bin.jpg)
+
 ---
 ### Задача 6.1
 
