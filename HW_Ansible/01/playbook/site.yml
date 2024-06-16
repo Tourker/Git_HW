@@ -1,4 +1,3 @@
-
 ---
   - name: Print os facts
     hosts: all
@@ -9,3 +8,6 @@
       - name: Print fact
         debug:
           msg: "{{ some_fact }}"
+      - name: Password print fact
+        debug:
+          msg: "{{ pass_var }}"
