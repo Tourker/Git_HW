@@ -1,12 +1,13 @@
 # Домашнее задание к занятию 2 «Работа с Playbook» - Мирошниченко Никита
 
 - [Описание](#Описание)
-- [Установка clickhouse](#Установка clickhouse)
-- [Установка vector](#Установка vector)
-- [Скриншоты к домашнему заданию](#Скриншоты к домашнему заданию)
+- [Установка clickhouse](#Clickhouse)
+- [Установка vector](#Vector)
+- [Скриншоты к домашнему заданию](#Screens)
 
 ## Описание
 Данный playbook устанавливает и конфигурирует clickhouse и vector
+
 ## Установка clickhouse
 
 1. Скачиваются необходимые дистрибутивы clickhouse
@@ -29,4 +30,4 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Ansible/img/02/lint.jpg)
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Ansible/img/02/docker ps.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Ansible/img/02/docker_ps.jpg)
