@@ -1,0 +1,15 @@
+sources:
+  demo_logs:
+    type: demo_logs
+    format: syslog
+sinks:
+  to_clickhouse:
+    type: clickhouse
+    inputs:
+      - demo_logs
+    database: logs
+    endpoint: 172.17.0.2
+    table: vector_table
+    compression: gzip
+    healthcheck: true
+    skip_unknown_fields: true
