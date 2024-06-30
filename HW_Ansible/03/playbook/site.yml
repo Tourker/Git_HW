@@ -1,0 +1,106 @@
+---
+- name: Install Clickhouse
+  hosts: clickhouse
+  handlers:
+    - name: Start clickhouse service
+      ansible.builtin.service:
+        name: clickhouse-server
+        state: restarted
+  tasks:
+    - block:
+        - name: Get clickhouse distrib
+          ansible.builtin.get_url:
+            url: "https://packages.clickhouse.com/rpm/stable/{{ item }}-{{ clickhouse_version }}.x86_64.rpm"
+            dest: "./{{ item }}-{{ clickhouse_version }}.rpm"
+          with_items: "{{ clickhouse_packages }}"
+      rescue:
+        - name: Get clickhouse distrib
+          ansible.builtin.get_url:
+            url: "https://packages.clickhouse.com/rpm/stable/clickhouse-common-static-{{ clickhouse_version }}.x86_64.rpm"
+            dest: "./clickhouse-common-static-{{ clickhouse_version }}.rpm"
+    - name: Install clickhouse packages
+      ansible.builtin.yum:
+        name:
+          - clickhouse-common-static-{{ clickhouse_version }}.rpm
+          - clickhouse-client-{{ clickhouse_version }}.rpm
+          - clickhouse-server-{{ clickhouse_version }}.rpm
+      notify:
+        - Start clickhouse service
+    - name: Flush handlers
+      meta: flush_handlers
+    - name: Create database
+      ansible.builtin.command: "clickhouse-client -q 'create database logs;'"
+      register: create_db
+      failed_when: create_db.rc != 0 and create_db.rc !=82
+      changed_when: create_db.rc == 0
+
+- name: Install Vector
+  hosts: vector
+  handlers:
+    - name: restart Vector service
+      ansible.builtin.service:
+        name: vector
+        state: restarted
+  tasks:
+    - name: Download distrib Vector
+      ansible.builtin.get_url:
+        url: "https://packages.timber.io/vector/0.39.0/vector-0.39.0-1.x86_64.rpm"
+        dest: "./vector-0.39.0-1.x86_64.rpm"
+    - name: Install Vector
+      ansible.builtin.yum:
+        name: "./vector-0.39.0-1.x86_64.rpm"
+        disable_gpg_check: true
+    - name: Vector template config
+      ansible.builtin.template:
+        src: vector.yml.j2
+        dest: "/etc/vector/vector.yaml"
+        mode: "0644"
+    - name: Vector service
+      ansible.builtin.template:
+        src: vector.service.j2
+        dest: /usr/lib/systemd/system/vector.service
+        mode: "0644"
+      notify: restart Vector service
+
+- name: Install Lighthouse
+  hosts: lighthouse
+  handlers:
+    - name: Nginx reload
+      become: true
+      ansible.builtin.service:
+        name: nginx
+        state: restarted
+  tasks:
+    - name: Install git
+      become: true
+      ansible.builtin.yum:
+        name: git
+        state: present
+    - name: Install epel-release
+      become: true
+      ansible.builtin.yum:
+        name: epel-release
+        state: present
+    - name: Install nginx
+      become: true
+      ansible.builtin.yum:
+        name: nginx
+        state: present
+    - name: Nginx config
+      become: true
+      ansible.builtin.template:
+        src: nginx.conf.j2
+        dest: /etc/nginx/nginx.conf
+        mode: "0644"
+    - name: Lighthouse clone repository
+      become: true
+      ansible.builtin.command:
+        cmd: git clone https://github.com/VKCOM/lighthouse.git
+        creates: ./
+    - name: Apply config
+      become: true
+      ansible.builtin.template:
+        src: lighthouse_nginx.conf.j2
+        dest: /etc/nginx/conf.d/lighthouse.conf
+        mode: "0644"
+      notify: Nginx reload
