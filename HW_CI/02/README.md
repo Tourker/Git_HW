@@ -12,7 +12,7 @@
 
 2. Произведены правки в коде файла fail.py и проведен анализ sonar-scanner
 
-`Ссылка на код с файлом: `
+`Ссылка на код с файлом: ` https://github.com/Tourker/Git_HW/blob/main/HW_CI/02/fail.py
 
 `Результат анализа кода после внесенных правок: `
 
@@ -22,7 +22,7 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/02/nexus.jpg)
 
-`Ссылка на файл maven-metadata.xml: `
+`Ссылка на файл maven-metadata.xml: ` https://github.com/Tourker/Git_HW/blob/main/HW_CI/02/maven-metadata.xml
 
 ### Знакомство с Maven
 
@@ -34,6 +34,6 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/02/mvn_result.jpg)
 
-`Ссылка на файл pom.xml: `
+`Ссылка на файл pom.xml: ` https://github.com/Tourker/Git_HW/blob/main/HW_CI/02/pom.xml
 
 ---
