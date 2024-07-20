@@ -70,4 +70,5 @@ ScriptedJenkinsfile: https://github.com/Tourker/docker-molecule/blob/master/Scri
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/03/17.jpg)
 
+Ссылка на репозиторий с тестовой ролью: https://github.com/Tourker/docker-molecule
 ---
