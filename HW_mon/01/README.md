@@ -73,8 +73,11 @@
 Ответ: 
 
 Zabbix, VictoriaMetrics - могут работать как pull, так и push
+
 Nagios, TICK - push
+
 Prometheus - pull
+
 #
 7. Склонируйте себе [репозиторий](https://github.com/influxdata/sandbox/tree/master) и запустите TICK-стэк, 
 используя технологии docker и docker-compose.
