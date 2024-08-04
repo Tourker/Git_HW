@@ -1,0 +1,17 @@
+1) Утилизация CPU для nodeexporter (в процентах, 100-idle):
+
+100-(rate(node_cpu_seconds_total{instance="node-exporter:9100", mode="idle"}[5m]))
+
+2) CPULA 1/5/1:
+
+node_load1 node_load5 node_load1
+
+3) Количество свободной оперативной памяти:
+
+node_memory_MemFree_bytes
+
+4) Количество места на файловой системе:
+
+node_filesystem_size_bytes{fstype="ext4"} - общий размер файловой системы
+
+node_filesystem_free_bytes{fstype="ext4"} - свободное место на файловой системе
