@@ -19,11 +19,14 @@
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Microservices/images/HW_principles_table1.jpg)
 
 Все решения в большинстве случаев поддерживают данные требования в условиях задачи. Но в сегодняшних реалиях при отсутствии доступов зарубежных решений, я бы выбрал Yandex Cloud, т.к. присутствуют следующие преимущества:
+
 1)	Используются домены и TLS-сертификаты в Yandex Certificate Manager как единая точка.
 2)	Присутствует с коробки Yandex Monitoring.
 3)	Имеется Журнал вызовов.
 4)	Имеется возможность создания управляемых прокси-серверов на базе OpenAPI Specification.
+
 При необходимости развертывания на железе можно выбрать Kong Gateway, т.к. у него есть следующие преимущества:
+
 1)	Базовое решение - бесплатно, но при необходимости можно платно расширить функционал.
 2)	Поддерживается развертывание через Docker, Kubernetes.
 3)	Большое сообщество и поддержка плагинов.
@@ -119,7 +122,7 @@ curl -X GET http://localhost/images/4e6df220-295e-4231-82bc-45e4b1484430.jpg
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Microservices/images/HW_principles_check.jpg)
 
-Ссылка на Docker-compose файл: 
+Ссылка на Docker-compose файл: https://github.com/Tourker/Git_HW/blob/main/HW_Microservices/11-microservices-02-principles/Docker-compose.yaml
 
 #### [Дополнительные материалы: как запускать, как тестировать, как проверить](https://github.com/netology-code/devkub-homeworks/tree/main/11-microservices-02-principles)
 
