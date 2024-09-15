@@ -79,6 +79,8 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/1/z1_microk8s_ip.jpg)
 
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/1/z1_microk8s_certs.jpg)
+
 ------
 
 ### Задание 2. Установка и настройка локального kubectl
