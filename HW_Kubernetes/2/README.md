@@ -47,9 +47,9 @@
 
 3. Создать Service с именем netology-svc и подключить к netology-web.
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/2/z2_2.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/2/z2_2_1.jpg)
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/2/z2_3.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/2/z2_3.jpg)fd
 
 4. Подключиться локально к Service с помощью `kubectl port-forward` и вывести значение (curl или в браузере).
 
