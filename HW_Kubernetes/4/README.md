@@ -35,6 +35,7 @@
 3. Создать отдельный Pod с приложением multitool и убедиться с помощью `curl`, что из пода есть доступ до приложения из п.1 по разным портам в разные контейнеры.
 
 Создание Pod'a - multitool:
+
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/4/z1_3_1.jpg)
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/4/z1_3_2.jpg)
