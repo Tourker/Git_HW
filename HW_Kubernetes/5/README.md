@@ -117,7 +117,7 @@ spec:
   selector:
     app: dep_z1
   ports:
-    - name: nginx
+    - name: multitool
       protocol: TCP
       port: 8080
       targetPort: 8080
