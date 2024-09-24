@@ -145,6 +145,8 @@ spec:
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/5/z2_4.jpg)
 
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/5/z2_5.jpg)
+
 4. Предоставить манифесты и скриншоты или вывод команды п.2.
 
 #### Ingress:
@@ -155,6 +157,7 @@ kind: Ingress
 metadata:
   name: web-ingress
   annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
   - host: tourk-homework.ru
