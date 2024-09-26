@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: daemonset-z1
+  labels:
+    app: dem_z1
+spec:
+  selector:
+    matchLabels:
+      app: dem_z1
+  template:
+    metadata:
+      labels:
+        app: dem_z1
+    spec:
+      containers:
+      - name: multitool
+        image: wbitt/network-multitool:f23a085
+        env:
+        - name: HTTP_PORT
+          value: "1000"
+        volumeMounts:
+          - name: vol
+            mountPath: /data
+      volumes:
+      - name: vol
+        hostPath:
+          path: /var/log/
