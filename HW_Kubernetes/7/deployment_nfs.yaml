@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-z2
+  labels:
+    app: dep_z2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dep_z2
+  template:
+    metadata:
+      labels:
+        app: dep_z2
+    spec:
+      containers:
+      - name: multitool
+        image: wbitt/network-multitool:f23a085
+        env:
+        - name: HTTP_PORT
+          value: "1000"
+        volumeMounts:
+          - name: vol
+            mountPath: /data
+      volumes:
+      - name: vol
+        persistentVolumeClaim:
+          claimName: pvc-nfs

@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-z1
+  labels:
+    app: dep_z1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dep_z1
+  template:
+    metadata:
+      labels:
+        app: dep_z1
+    spec:
+      containers:
+      - name: busybox
+        image: busybox
+        command: ['sh', '-c', 'while true; do echo My first volume in k8s! >> /data/success.txt && sleep 5; done']
+        volumeMounts:
+          - name: vol
+            mountPath: /data
+      - name: multitool
+        image: wbitt/network-multitool:f23a085
+        env:
+        - name: HTTP_PORT
+          value: "1000"
+        volumeMounts:
+          - name: vol
+            mountPath: /data
+      volumes:
+      - name: vol
+        persistentVolumeClaim:
+          claimName: pvc-homework
