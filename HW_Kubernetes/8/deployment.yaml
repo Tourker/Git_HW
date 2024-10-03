@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-z1
+  labels:
+    app: dep_z1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dep_z1
+  template:
+    metadata:
+      labels:
+        app: dep_z1
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+        volumeMounts:
+        - name: api-html
+          mountPath: /usr/share/nginx/html
+      - name: multitool
+        image: wbitt/network-multitool:f23a085
+        env:
+        - name: HTTP_PORT
+          valueFrom:
+            configMapKeyRef:
+              name: env-config
+              key: env
+      volumes:
+      - name: api-html
+        configMap:
+          name: api-html

@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: web-ingress
+  annotations:
+spec:
+  rules:
+  - host: tourk-homework.ru
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: dep-svc
+            port:
+              number: 80
+  tls:
+      - hosts:
+        - tourk-homework.ru
+        secretName: secret-tls
