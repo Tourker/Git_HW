@@ -1,0 +1,4 @@
+image_nginx: nginx
+tag_nginx: 1.27.1
+image_multitool: wbitt/network-multitool
+tag_multitool: 340b0bd
