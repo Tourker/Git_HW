@@ -51,13 +51,13 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/10/z1_4.jpg)
 
-Ссылка на [values.yaml]()
+Ссылка на [values.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/10/homework-chart/values.yaml)
 
-Ссылка на [deployment_z1.yaml]()
+Ссылка на [deployment_z1.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/10/homework-chart/templates/deployment_z1.yaml)
 
-Ссылка на [service_z1.yaml]()
+Ссылка на [service_z1.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/10/homework-chart/templates/service_z1.yaml)
 
-Ссылка на [Chart.yaml]()
+Ссылка на [Chart.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/10/homework-chart/Chart.yaml)
 
 ------
 ### Задание 2. Запустить две версии в разных неймспейсах
