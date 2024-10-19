@@ -53,29 +53,29 @@
 
 #### Deployments:
 
-[backend]()
+[backend](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/backend.yaml)
 
-[frontend]()
+[frontend](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/frontend.yaml)
 
-[cache]()
+[cache](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/cache.yaml)
 
 #### Services:
 
-[svc-backend]()
+[svc-backend](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/svc-backend.yaml)
 
-[svc-frontend]()
+[svc-frontend](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/svc-frontend.yaml)
 
-[svc-cache]()
+[svc-cache](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/svc-cache.yaml)
 
 #### Policies:
 
-[policy-backend]()
+[policy-backend](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/policy-backend.yaml)
 
-[policy-frontend]()
+[policy-frontend](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/policy-frontend.yaml)
 
-[policy-cache]()
+[policy-cache](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/policy-cache.yaml)
 
-[policy-block]()
+[policy-block](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/13/policy-block.yaml)
 
 ### Правила приёма работы
 
