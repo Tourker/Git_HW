@@ -27,8 +27,6 @@
 4. Создать политики, чтобы обеспечить доступ frontend -> backend -> cache. Другие виды подключений должны быть запрещены.
 5. Продемонстрировать, что трафик разрешён и запрещён.
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/13/z1_2.jpg)
-
 Правило блокировки всего трафика:
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/13/z1_2.jpg)
