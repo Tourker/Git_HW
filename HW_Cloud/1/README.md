@@ -63,8 +63,8 @@ Resource Terraform для Yandex Cloud:
 
 ### Исходный код terraform:
 
-- [main.tf]()
-- [providers.tf]()
-- [vms_platform.tf]()
+- [main.tf](https://github.com/Tourker/Git_HW/blob/main/HW_Cloud/1/src/main.tf)
+- [providers.tf](https://github.com/Tourker/Git_HW/blob/main/HW_Cloud/1/src/providers.tf)
+- [vms_platform.tf](https://github.com/Tourker/Git_HW/blob/main/HW_Cloud/1/src/vms_platform.tf)
 
 ---
