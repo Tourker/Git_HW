@@ -1,0 +1,19 @@
+#cloud-config
+users:
+- name: ubuntu
+  groups: sudo
+  shell: /bin/bash
+  sudo: 'ALL=(ALL) NOPASSWD:ALL'
+  shell: /bin/bash
+  ssh_authorized_keys:
+  - ssh-ed25519 ***********************************
+
+runcmd:
+  - [ find, /var/www, -type, d, -exec, chmod, 2775, {}, \; ]
+  - [ find, /var/www, -type, f, -exec, chmod, 0664, {}, \; ]
+
+write_files:
+  - path: /var/www/html/index.html
+    owner: www-data:www-data
+    content: |
+      '<a href="https://storage.yandexcloud.net/test-netology-bucket/image-test.jpg">link to bucket</a>'
