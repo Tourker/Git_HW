@@ -105,17 +105,17 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/05/z1_5.jpg)
 
-6. Описал этапы Pipline:
+6. Описал этапы Pipeline:
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/05/z1_6.jpg)
 
-7. Выполненный успешно pipline:
+7. Выполненный успешно pipeline:
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/05/z1_7_0.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/05/z1_7_1.jpg)
 
 8. Созданный образ в Registry:
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/05/z1_7_1.jpg)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_CI/img/05/z1_7_0.jpg)
 
 #### Задание с редактированием JSON и новый issues:
 
