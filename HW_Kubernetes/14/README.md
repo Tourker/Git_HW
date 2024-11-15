@@ -86,7 +86,7 @@
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/14/z3_1.jpg)
 
-2. Проверка, что трафик перебрасывается при указании запроса curl в header и pattern - "Irkutsk: bratsk":
+2. Проверка, что трафик перебрасывается при указании в запросе curl информацию о регионе и городе в header и pattern - "Irkutsk: bratsk":
 
 ![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/img/14/z3_2.jpg)
 
