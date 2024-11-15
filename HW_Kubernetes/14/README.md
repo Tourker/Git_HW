@@ -66,7 +66,7 @@
 ##### Исходный код:
 
 [deployment.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/14/deployment.yaml)
-[svc.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/14/svc.yaml.yaml)
+[svc.yaml](https://github.com/Tourker/Git_HW/blob/main/HW_Kubernetes/14/svc.yaml)
 
 
 ---
