@@ -61,7 +61,7 @@
 
 1) Созданный кластер в сервисе Managed Service for Kubernetes:
 
-![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Cloud/img/4/z2_1.jp)
+![Скриншот](https://github.com/Tourker/Git_HW/blob/main/HW_Cloud/img/4/z2_1.jpg)
 
 2) Группа узлов:
 
